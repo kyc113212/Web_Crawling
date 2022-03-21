@@ -1,0 +1,7 @@
+<cmd화면에서>
+- python -m venv wc_lec > 현재 폴더에 wc_lec라는 가상폴더를 만든다.
+- cd wc_lec
+- dir > 현재 폴더에 어떤 파일이 있는지 확인
+- Scripts\activate.bat > Scripts라는 폴더가 생기는데 여기에 activate.bat을 실행시킨다 > wc_lec라는 가상환경이 활성화 된다
+- 해당 가상환경에 여러 라이브러리를 설치할 수 있다. (pip install numpy pandas matplotlib)
+- 민감한 버전을 사용할 때 이렇게 따로 관리할 수 있다.
