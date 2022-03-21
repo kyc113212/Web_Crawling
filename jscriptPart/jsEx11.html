@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsEx11</title>
+    <script>
+        function callfunc(cb){
+            for(var i = 0; i<5; i++){
+                cb();
+            }
+        }
+        var f3 = function(){
+            alert('f3() call');
+        }
+        callfunc(f3)
+      </script>
+</head>
+<body>
+
+</body>
+</html>

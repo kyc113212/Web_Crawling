@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsEx15</title>
+    <script>
+        var output = '';
+        var student = {
+        name:'oh',
+        korean:99, math:88,
+        english:97, science:100
+        };
+
+        with(student){
+        output += 'name: ' + name + '\n';
+        output += 'korean: ' + korean + '\n';
+        output += 'math: ' + math + '\n';
+        output += 'english: ' + english + '\n';
+        output += 'science: ' + science + '\n';
+        }
+
+
+        alert(output);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
