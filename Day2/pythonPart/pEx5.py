@@ -3,7 +3,7 @@
 sdata = {3,2,4,1,2,4,1,2,3}
 print(sdata)
 
-#합집합, 교집합, 차집합, 대칭차집합 사용가능 set을 이용하여
+#set을 이용하여 합집합, 교집합, 차집합, 대칭차집합 사용가능
 sdata2 = {1,2,3,4}
 sdata3 = {3,4,5,6}
 
@@ -35,7 +35,6 @@ print(sdata4)
 
 #빈 중괄호는 dict type으로 인식하므로 set객체는 아래와 같이 만든다
 #dict의 해당하는 key값은 set으로 사용한다(중복사용x), value는 모든 오브젝트를 사용할 수 있다.
-
 print()
 sdata5 = {}
 print(type(sdata5))

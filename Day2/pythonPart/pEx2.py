@@ -1,6 +1,7 @@
 str1 = 'it is a good day'
 
 # 아무것도 input하지 않으면 공백을 return해준다.
+# i를 기준으로 split - i는 포함되지 않는다
 data = str1.split('i')
 print(data)
 data2 = str1.split(' ')

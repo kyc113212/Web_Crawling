@@ -6,6 +6,7 @@
   <script>
   //onload는 body가 읽히고 난 다음에 읽히는 것이다
     window.onload = function(){
+    //각 id를 통해서 객체를 가져온다.
         var sun = document.getElementById('sun');
         var earth = document.getElementById('earth');
         var moon = document.getElementById('moon');
@@ -22,6 +23,8 @@
         var moonAngle = 0;
 
         // function에 해당하는것이 1000/300마다 실행한다.
+        // setInterval을 통해서 일정한 시간마다 동작하게 하도록 구현
+        // setInterval 내부에 function을 만들 수 있다
         setInterval(function(){
             var earthLeft = 250 + 150 * Math.cos(earthAngle);
             var earthTop = 200 + 150 * Math.sin(earthAngle);

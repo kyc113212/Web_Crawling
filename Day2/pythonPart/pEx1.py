@@ -1,3 +1,4 @@
+# strip을 통해서 특정문자열 제거
 str1 = '    python      '
 print('*',str1,'*')
 print('*',str1.strip(),'*')
