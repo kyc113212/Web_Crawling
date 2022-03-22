@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function(){
+            var output = '';
+            for(var i = 0; i<5; i++){
+                output += '<h1>Header-'+i+'</h1>';
+            }
+            //document.body.textContent = output;
+            //document.body.innerHTML = output;
+            //innerHTML은 안에있는 h1값을 html로 인식해서 출력할 수 있게 하는 것이다
+            var node = document.createElement('h2');
+            var textnode = document.createTextNode('water')
+            node.appendChild(textnode);
+            document.body.appendChild(node);
+            //내부에서 h2객체를 만든다음에 text를 set하고 child node에 추가하여 출력
+        }
+    </script>
+</head>
+<body>
+  <h1>hi everyone!!!</h1>
+</body>
+</html>

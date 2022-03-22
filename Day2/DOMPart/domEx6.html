@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function buttonClick() {
+            alert('buttonClick function call');
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="buttonClick()">button1</button><br/>
+    <button onclick="alert('click2')">button2</button><br/>
+    <button id="button">button3</button><br/>
+    <script>
+        document.getElementById('button').onclick = function(){
+            this.textContent = this.textContent + '+';
+        }
+    </script>
+
+</body>
+</html>

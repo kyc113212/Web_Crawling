@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DomEx1</title>
+    <script>
+    // 이벤트를 실행합니다.
+    // 만들어진 상태에서 onload가 출력이 될때 header라는 id의 내용을 바꿔준다
+        window.onload = function() {
+
+            var headers = document.querySelectorAll('h1');
+
+            for(var i = 0; i < headers.length; i++){
+                var h1 = headers[i];
+                h1.style.color = 'orange';
+                h1.style.background = 'red';
+                h1.innerHTML = 'from javascript!!!';
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Header1</h1>
+    <h1>Header2</h1>
+    <h1>Header3</h1>
+</body>
+</html>
