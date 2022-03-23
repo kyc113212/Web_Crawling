@@ -14,7 +14,9 @@ scanned_text = byte_content[0:1024].decode('ascii', errors='replace')
 # 아래와 같이 그룹으로 묶어야 mobj에서 그룹으로 판단하여 출력할 수 있다 소괄호()그룹 꼭 기억하자
 # 뒤에 숫자 8은 그룹으로 묶는거전에 \"로 그룹 닫은 후에 "표시를 해주었으므로 -다음에 8까지 그룹에 포함된다
 mobj = re.search(r'charset=\"([\w-]+)\"',scanned_text)
+#아래는 읽어온 통의 값을 표시
 print(mobj.group())
+#아래는 그룹화한 것에 첫번째 값을 표시(그룹화는 위에 정규식에서 소괄호로 작업한것)
 print(mobj.group(1))
 
 if mobj:
@@ -22,4 +24,4 @@ if mobj:
 else:
     encoding = 'utf-8'
 text = byte_content.decode(encoding)
-print(text)
+#print(text)

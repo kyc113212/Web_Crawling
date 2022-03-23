@@ -12,8 +12,16 @@ html_content = str(html.read().decode('utf-8'))
 #title_result = re.findall(r'\<a href=\"store\/books\/look+', html_content)
 #title_result = re.findall(r'\<a href=\"/store/books/look\.+([\s\S]+?)\<\/a\>', html_content)
 info_result = re.findall(r'\<a href=\"(/store/books/look\.php\?p_code=[\w]+)\"\>([\s\S]+?)\<\/a\>', html_content)
+
 for info_list in info_result:
     str = 'http://www.hanbit.co.kr'+info_list[0]
     print("url:", str)
     print("title:", info_list[1])
     print('---')
+    
+    #urlEx3참고
+    #urlEx5참고
+#
+# info_result2 = re.findall(r'(\<td class=\"left\"\>)([\s\S]+?)\</table\>',html_content)
+# info_result3 = re.findall(r'\<a([\s\S])+href=\"([\s\S]+?)',info_result2)
+# print(info_result3)

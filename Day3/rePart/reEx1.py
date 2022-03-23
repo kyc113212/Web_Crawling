@@ -3,6 +3,7 @@ import re
 #정규식 공부
 
 # Hello를 정규식으로 만들기 위해 compile이라는 정규식 변경 method를 사용한다.
+# 정규식은 컴파일이란 과정을 거치는데 search와 같은 것을 호출할때마다 자체적으로 compile하는 것은 성능상에 부담이 있기때문에 사용하기 좋게 미리 정규식으로 컴파일한다.
 r1 = re.compile('Hello')
 # r1이라는 정규식을 넣어주고 뒤에 문자열중에 r1의 정규식을 찾는 method이다
 fobj1 = re.search(r1, 'good Hello World')
@@ -45,7 +46,7 @@ print(fobj8)
 fobj9 = re.findall('[0-9]+', 'Hello good Hello 53 4 World')
 print(fobj9)
 
-# 중괄호를 이용해서 앞에글자의 2개이상 3개이하를 찾는 방법
+# 중괄호를 이용해서 앞에글자의 2개이상 3개이하를 찾는 방법 (h가 2개이상 3개이하를 찾는다)
 fobj10 = re.findall(r'h{2,3}', 'Hello ghhood Hello 53 4 ddddddddddhhhWorld')
 print(fobj10)
 
@@ -54,7 +55,7 @@ print(fobj10)
 fobj11 = re.findall(r'[\d]{2,3}-[0-9]{3,4}-[0-9]{4}', 'Hello tel:010-7878-8989 Hello 017-134-2212ghhood 02-232-1123Hello 53 4 ddddddddddhhhWorld')
 print(fobj11)
 
-# a-zA-z는 문자열 모두 포함
+# a-zA-Z는 문자열 모두 포함
 fobj12 = re.findall(r'[a-zA-Z]+', 'good tel:010-8989-8989 hj Hello')
 print(fobj12)
 
@@ -62,6 +63,6 @@ print(fobj12)
 fobj13 = re.findall(r'\w+', 'good tel:010-8989-8989 hj Hello')
 print(fobj13)
 
-# \W+(대문자)는 부정을 의미 _까지 다 포함하는 것이다. 위의 문자 숫자를 제외한게 리스트로 전달받는다
+# \W+(대문자)는 부정을 의미하며 정수, 알파벳 이외의 모든것(ex) _)까지 다 포함하는 것이다. 위의 문자 숫자를 제외한게 리스트로 전달받는다
 fobj14 = re.findall(r'\W+', 'good tel:010-8989-8989 hj Hello')
 print(fobj14)

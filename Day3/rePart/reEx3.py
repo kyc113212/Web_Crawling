@@ -1,7 +1,7 @@
 import re
 
 #정규식 표현을 통해 해당하는 문자열을 바꿔준다
-#apple과 orange가 fruit으로 바꾼다
+#apple과 orange가 fruit으로 바꾼다 substitue의 개념
 cstr1 = re.sub(r'apple|orange', 'fruit','apple box orange box')
 print(cstr1)
 

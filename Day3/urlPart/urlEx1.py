@@ -20,5 +20,6 @@ print(uf2)
 encoding = uf2.info().get_content_charset(failobj='utf-8')
 print(encoding)
 
+# 아래와 같이 url을 읽어와서 read한 후에 decoding을 해주어야 한다
 text = uf2.read().decode(encoding)
 print(text)

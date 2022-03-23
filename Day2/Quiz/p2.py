@@ -15,3 +15,5 @@ for line in infile:
     if data[1] == continent:
         print(data[0])
 
+infile.close()
+
