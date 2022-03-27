@@ -13,7 +13,7 @@ baseurl = 'https://search.daum.net/search?w=img&nil_search=btn&DA=NTB&enc=utf8&q
 url = baseurl+quote_plus(searchStr)
 # print(url)
 
-s = Service('chromedriver.exe')
+s = Service('../../Day5/webcrawlingPart/chromedriver.exe')
 driver = webdriver.Chrome(service=s)
 # 창 출력
 driver.get(url)
@@ -32,7 +32,7 @@ for thumnail in thumnails:
     # 파일명의 이름의 숫자를 랜덤하게 주는것
     rvar = str(round(random.random()*1000000))
     # 소스파일을 저장하기 위해 사용, 다운받아올 경로와, 실제 directory에 어떠한 이름으로 저장할지 지정
-    dload.save(src, f'imgs/{searchStr}{rvar}.jpg')
+    #dload.save(src, f'imgs/{searchStr}{rvar}.jpg')
 
 #끝나면 창을 꺼준다다
 driver.quit()

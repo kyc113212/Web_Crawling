@@ -3,7 +3,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-s = Service('chromedriver.exe')
+s = Service('../../Day5/webcrawlingPart/chromedriver.exe')
 driver = webdriver.Chrome(service=s)
 driver.implicitly_wait(3)
 driver.get('https://nid.naver.com/nidlogin.login')

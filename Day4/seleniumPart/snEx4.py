@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
-s = Service('chromedriver.exe')
+s = Service('../../Day5/webcrawlingPart/chromedriver.exe')
 driver = webdriver.Chrome(service=s)
 driver.get('https://www.naver.com')
 

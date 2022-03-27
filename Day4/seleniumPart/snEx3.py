@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import time
-s = Service('chromedriver.exe')
+s = Service('../../Day5/webcrawlingPart/chromedriver.exe')
 driver = webdriver.Chrome(service=s)
 driver.get('https://www.naver.com')
 time.sleep(1)

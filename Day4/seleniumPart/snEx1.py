@@ -5,7 +5,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-s = Service('chromedriver.exe')
+s = Service('../../Day5/webcrawlingPart/chromedriver.exe')
 #서비스에 크롭 드라이버가 올라가있는 객체를 올려준다
 driver = webdriver.Chrome(service=s)
 driver.implicitly_wait(3)
